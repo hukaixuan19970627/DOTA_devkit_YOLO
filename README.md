@@ -6,12 +6,17 @@ Add some files for every demo.
 
 
 ## Fuction
-* `DOTA.py`     Load and image, and show the bounding box on it.
+* `DOTA.py`  Load and image, and show the bounding box on it.
+
 * `ImgSplit.py` Split the image and the label.
+
 * `ResultMerge.py` Merge the detection result annotation txt.
+
 * `dota_×_evaluation_task×.py` Evaluate the detection result annotation txt.
-* `YOLO_Transformer.py` Trans DOTA format to YOLO format.
-* `Draw_DOTA_YOLO.py`Picture the YOLO_OBB labels(after augmented) 
+
+* `YOLO_Transformer.py`     Trans DOTA format to YOLO(OBB or HBB) format.
+
+* `Draw_DOTA_YOLO.py`Picture the YOLO_OBB labels(after augmented).
 
 ## Installation
 Same as [DOTA_devkit](https://github.com/CAPTAIN-WHU/DOTA_devkit).
@@ -27,14 +32,25 @@ Same as [DOTA_devkit](https://github.com/CAPTAIN-WHU/DOTA_devkit).
 ```javascript
 $  python DOTA.py
 ```
+![DOTA_HBB_label](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/demo_result_img/P0003_HBB.png)
+![DOTA_OBB_label](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/demo_result_img/P0003_OBB.png)
 * `ImgSplit.py` 
 ```javascript
 $  python ImgSplit_multi_process.py
 ```
+![Img_before_split](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/demo_result_img/P0130.png)
+![Img_after_split](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/demo_result_img/P0130__1__0___0.png)
 * `ResultMerge.py` 
 ```javascript
 $  python ResultMerge.py
 ```
+![visualize_detection_result1](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/demo_result_img/P0004__1__0___0.png)
+![visualize_detection_result2](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/demo_result_img/P0004__1__0___440.png)
+![visualize_merged_result](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/demo_result_img/P0004_.png)
+
+
+
+
 * `dota_v1.5_evaluation_task1.py` 
 
 change the path with yours.
@@ -51,14 +67,23 @@ $  python dota_v1.5_evaluation_task1.py
 ```javascript
 $  python YOLO_Transformer.py
 ```
+```javascript
+DOTA format:    poly classname diffcult
+    To
+YOLO HBB format: classid x_c y_c width height  
+longside format： classid x_c y_c longside shortside Θ  Θ∈[0, 180)
+```
+
+
 * `Draw_DOTA_YOLO.py`
 
 1.Run YOLO_Transformer.py to get the YOLO_OBB_labels first.
 
-2.then :
+2.then augment YOLO_OBB_labels and visualize it:
 ```javascript
 $  Draw_DOTA_YOLO.py
 ```
+![visualize_augmented_labels](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/demo_result_img/P0003_augment_.png)
 
 
 ## 有问题反馈
