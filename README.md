@@ -63,9 +63,9 @@ imagesetfile = r'/home/test/Persons/hukaixuan/DOTA_devkit-master/evaluation_exam
 $  python dota_v1.5_evaluation_task1.py
 ```
 
-* `YOLO_Transformer.py` 
+* `YOLO_Transform.py` 
 ```javascript
-$  python YOLO_Transformer.py
+$  python YOLO_Transform.py
 ```
 ```javascript
 DOTA format:    poly classname diffcult
