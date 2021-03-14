@@ -27,7 +27,7 @@ Same as [DOTA_devkit](https://github.com/CAPTAIN-WHU/DOTA_devkit).
 [DOTA数据格式转YOLO数据格式工具(cv2.minAreaRect踩坑记录)](https://zhuanlan.zhihu.com/p/356416158);
 
 
-## How to use it
+## Usage Example
 * `DOTA.py`     
 ```javascript
 $  python DOTA.py
