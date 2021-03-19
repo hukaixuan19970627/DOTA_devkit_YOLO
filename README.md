@@ -32,21 +32,21 @@ Same as [DOTA_devkit](https://github.com/CAPTAIN-WHU/DOTA_devkit).
 ```javascript
 $  python DOTA.py
 ```
-![DOTA_HBB_label](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/demo_result_img/P0003_HBB.png)
-![DOTA_OBB_label](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/demo_result_img/P0003_OBB.png)
+![DOTA_HBB_label](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/P0003_HBB.png)
+![DOTA_OBB_label](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/P0003_OBB.png)
 * `ImgSplit.py` 
 ```javascript
 $  python ImgSplit_multi_process.py
 ```
-![Img_before_split](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/demo_result_img/P0130.png)
-![Img_after_split](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/demo_result_img/P0130__1__0___0.png)
+![Img_before_split](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/P0130.png)
+![Img_after_split](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/P0130__1__0___0.png)
 * `ResultMerge.py` 
 ```javascript
 $  python ResultMerge.py
 ```
-![visualize_detection_result1](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/demo_result_img/P0004__1__0___0.png)
-![visualize_detection_result2](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/demo_result_img/P0004__1__0___440.png)
-![visualize_merged_result](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/demo_result_img/P0004_.png)
+![visualize_detection_result1](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/P0004__1__0___0.png)
+![visualize_detection_result2](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/P0004__1__0___440.png)
+![visualize_merged_result](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/P0004_.png)
 
 
 
@@ -83,7 +83,7 @@ longside format： classid x_c y_c longside shortside Θ  Θ∈[0, 180)
 ```javascript
 $  Draw_DOTA_YOLO.py
 ```
-![visualize_augmented_labels](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/demo_result_img/P0003_augment_.png)
+![visualize_augmented_labels](https://github.com/hukaixuan19970627/DOTA_devkit_YOLO/tree/master/P0003_augment_.png)
 
 
 ## 有问题反馈
