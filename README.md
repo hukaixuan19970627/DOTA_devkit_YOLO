@@ -55,9 +55,9 @@ $  python ResultMerge.py
 
 change the path with yours.
 ```javascript
-detpath = r'/home/test/Persons/hukaixuan/DOTA_devkit-master/evaluation_example/result_classname/Task1_{:s}.txt'
-annopath = r'/home/test/Persons/hukaixuan/DOTA_devkit-master/evaluation_example/row_DOTA_labels/{:s}.txt'
-imagesetfile = r'/home/test/Persons/hukaixuan/DOTA_devkit-master/evaluation_example/imgnamefile.txt'
+detpath = r'/.../evaluation_example/result_classname/Task1_{:s}.txt'
+annopath = r'/.../evaluation_example/row_DOTA_labels/{:s}.txt'
+imagesetfile = r'/.../evaluation_example/imgnamefile.txt'
 ```
 ```javascript
 $  python dota_v1.5_evaluation_task1.py
