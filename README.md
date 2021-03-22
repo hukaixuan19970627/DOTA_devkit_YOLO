@@ -19,7 +19,11 @@ Add some files for every demo.
 * `Draw_DOTA_YOLO.py`Picture the YOLO_OBB labels(after augmented).
 
 ## Installation
-Same as [DOTA_devkit](https://github.com/CAPTAIN-WHU/DOTA_devkit).
+Same as [DOTA_devkit](https://github.com/CAPTAIN-WHU/DOTA_devkit).  Then:
+
+```
+$  pip install -r requirements.txt
+```
 
 ## More detailed explanation
 想要了解这几个函数实现的细节和原理可以看我的知乎文章;    
