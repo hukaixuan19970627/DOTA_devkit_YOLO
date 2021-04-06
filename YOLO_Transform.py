@@ -21,6 +21,9 @@ def dota2Darknet(imgpath, txtpath, dstpath, extractclassname):
     :return:
            txt format: id x y w h
     """
+    if os.path.exists(dstpath):
+        shutil.rmtree(dstpath)  # delete output folder
+    os.makedirs(dstpath)  # make new output folder
     filelist = util.GetFileFromThisRootDir(txtpath)  # fileist=['/.../P0005.txt', ..., /.../P000?.txt]
     for fullname in filelist:  # fullname='/.../P000?.txt'
         objects = util.parse_dota_poly(fullname)
