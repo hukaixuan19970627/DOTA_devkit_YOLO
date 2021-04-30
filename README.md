@@ -74,8 +74,8 @@ $  python YOLO_Transform.py
 ```javascript
 DOTA format:    poly classname diffcult
     To
-YOLO HBB format: classid x_c y_c width height  
-longside format： classid x_c y_c longside shortside Θ  Θ∈[0, 180)
+YOLO HBB format: classid x_c y_c width height   ——   def dota2Darknet()
+longside format： classid x_c y_c longside shortside Θ  Θ∈[0, 180)  ——  def dota2LongSideFormat()
 ```
 
 
