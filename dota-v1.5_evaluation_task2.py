@@ -244,8 +244,14 @@ def main():
     #             'basketball-court', 'storage-tank',  'soccer-ball-field', 'roundabout', 'harbor', 'swimming-pool', 'helicopter']
     classaps = []
     map = 0
+    skippedClassCount = 0
     for classname in classnames:
         print('classname:', classname)
+        detfile = detpath.format(classname)
+        if not (os.path.exists(detfile)):
+            skippedClassCount += 1
+            print('This class is not be detected in your dataset: {:s}'.format(classname))
+            continue
         rec, prec, ap = voc_eval(detpath,
              annopath,
              imagesetfile,
@@ -257,13 +263,13 @@ def main():
         print('ap: ', ap)
         classaps.append(ap)
 
-        ## uncomment to plot p-r curve for each category
+        # umcomment to show p-r curve of each category
         # plt.figure(figsize=(8,4))
         # plt.xlabel('recall')
         # plt.ylabel('precision')
         # plt.plot(rec, prec)
-        # plt.show()
-    map = map/len(classnames)
+       # plt.show()
+    map = map/(len(classnames)-skippedClassCount)
     print('map:', map)
     classaps = 100*np.array(classaps)
     print('classaps: ', classaps)
